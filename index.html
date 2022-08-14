@@ -9,46 +9,130 @@
   </head>
   <body>
     <h1 id="title">Survey Pembaca</h1>
-    <p id="description">Masukan Anda Berarti untuk Kami</p>
+    <p id="description" class="sub-judul">Masukan Anda Berarti untuk Kami</p>
     <form id="survey-form">
-      <fieldset>
+      <div>
         <label for="name" id="name-label">Nama Lengkap:</label>
-        <input type="text" id="name" placeholder="Masukkan Nama Anda" />
+        <input
+          type="text"
+          class="input-data"
+          id="name"
+          placeholder="Masukkan Nama Anda"
+        />
         <label for="email" id="email-label">Alamat Email:</label>
-        <input type="email" id="email" placeholder="masukkan email anda" />
+        <input
+          type="email"
+          class="input-data"
+          id="email"
+          placeholder="masukkan email anda"
+        />
         <label for="number" id="number-label">Usia:</label>
-        <input type="number" id="number" placeholder="Usia Anda Saat ini" />
-      </fieldset>
-      <fieldset>
-        <label for="dropdown">Jumlah buku yang telah anda baca tahun ini</label>
-        <select id="dropdown">
+        <input
+          type="number"
+          class="input-data"
+          id="number"
+          placeholder="Usia Anda Saat ini"
+        />
+      </div>
+      <div>
+        <label for="dropdown"
+          >Rata-rata buku yang dibaca dalam satu tahun:</label
+        >
+        <select class="input-dropdown" id="dropdown">
           <option value="0">-</option>
           <option value="1">Kurang Dari 3</option>
           <option value="2">3 sampai 5</option>
           <option value="3">6 sampai 10</option>
           <option value="4">Lebih dari 10</option>
         </select>
-        <p>Jenis Buku yang Disukai</p>
-        <input type="radio" id="book-type1" name="book-type" value="fisik" />
-        <label for="book-type1">Buku Fisik</label><br />
-        <input type="radio" id="book-type2" name="book-type" value="digital" />
-        <label for="book-type2">Buku Digital</label>
-      </fieldset>
-      <fieldset>
-        <input type="checkbox" id="misteri" value="misteri" />
-        <label for="misteri">Misteri</label>
-        <input type="checkbox" id="misteri" value="fantasi" />
-        <label for="misteri">Fantasi</label>
-        <input type="checkbox" id="misteri" value="scifi" />
-        <label for="misteri">sci-fi</label>
-
-        <label
-          >alasan anda membaca buku:
-          <textarea name="alasan" rows="3" cols="30"></textarea>
+        <p>Jenis Buku yang Disukai:</p>
+        <label for="book-type1">
+          <input
+            type="radio"
+            class="input-radio"
+            name="book-type"
+            value="fisik"
+          />
+          Buku Fisik
         </label>
+        <label>
+          <input
+            type="radio"
+            class="input-radio"
+            name="book-type"
+            value="digital"
+          />
+          Buku Digital
+        </label>
+      </div>
 
-        <input type="submit" value="selesai survey" />
-      </fieldset>
+      <div class="form-group">
+        <p>Genre Yang Disukai:</p>
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="genre"
+            value="misteri"
+          />
+          Misteri
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="genre"
+            value="fantasi"
+          />
+          Fantasi
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="genre"
+            value="scifi"
+          />
+          Sci-Fi
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="genre"
+            value="romansa"
+          />
+          romansa
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="genre"
+            value="thriller"
+          />
+          Thriller
+        </label>
+        <label>
+          <input
+            type="checkbox"
+            class="input-checkbox"
+            name="genre"
+            value="sol"
+          />
+          Slice of Life
+        </label>
+      </div>
+      <div>
+        <label> alasan anda membaca buku: </label>
+        <textarea
+          class="input-textarea"
+          name="alasan"
+          rows="3"
+          cols="30"
+        ></textarea>
+      </div>
+      <input class="submit-button" type="submit" value="selesai survey" />
     </form>
   </body>
 </html>
