@@ -18,19 +18,24 @@
           class="input-data"
           id="name"
           placeholder="Masukkan Nama Anda"
+          required
         />
         <label for="email" id="email-label">Alamat Email:</label>
         <input
+          inputmode="email"
           type="email"
           class="input-data"
           id="email"
           placeholder="masukkan email anda"
+          required
         />
         <label for="number" id="number-label">Usia:</label>
         <input
           type="number"
           class="input-data"
           id="number"
+          min="13"
+          max="99"
           placeholder="Usia Anda Saat ini"
         />
       </div>
@@ -132,7 +137,12 @@
           cols="30"
         ></textarea>
       </div>
-      <input class="submit-button" type="submit" value="selesai survey" />
+      <input
+        class="submit-button"
+        id="submit"
+        type="submit"
+        value="selesai survey"
+      />
     </form>
   </body>
 </html>
